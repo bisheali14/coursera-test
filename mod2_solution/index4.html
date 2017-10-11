@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+  <title>Mod2_solution</title>
+</head>
+<body>
+
+<style type="text/css">
+
+/*-- General styling --*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+}
+  
+h1{
+  text-align: center;
+  margin: 40px 20px 30px 20px;
+  font-size: 200%;
+}
+
+.row{
+  position: reabsolute;
+  margin: 20px;
+  width: 100%;
+}
+
+p{
+  display: block;
+  position: absolute;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  width: 120px;
+  padding: 3px;
+  top:0;
+  right:0;
+}
+
+#chicken{
+  background-color: #E5C1D5; 
+}
+#beef{
+  background-color: #E55C57; 
+}
+#sushi{
+  background-color: #E5D98C;
+}
+
+.col-lg-3{
+  position: relative;
+  float:left;
+  border: 1px solid black;
+  margin: 10px 10px;
+  /*height: 290px;*/
+}
+
+.col-lg-3:nth-child(1){
+  background-color: lightblue;
+  padding: 30px 10px 10px 10px;
+}
+.col-lg-3:nth-child(2){
+  background-color: lightgreen;
+  padding: 30px 10px 10px 10px;
+}
+.col-lg-3:nth-child(3){
+  background-color: lightyellow;
+  padding: 30px 10px 10px 10px;
+}
+
+/* -- Finish General styling --*/
+
+@media (min-width: 992px ){
+  .col-lg-3{
+    width: 31.37%;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    .col-md-2:nth-child(1), .col-md-2:nth-child(2){
+    width: 47.5%;
+  }
+
+    .col-md-2:nth-child(3){
+
+      width:98%;
+    }
+
+}
+</style>
+
+
+
+<h1>Our Menu</h1>
+
+<div id="row">
+  <div class="col-lg-3 col-md-2">
+     <p id="chicken">Chicken</p><div id="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpaconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua qui officia deserunt mollit anim id est laborum.</div>
+  </div>
+
+  <div class="col-lg-3 col-md-2">
+    <p id="beef">Beef</p><div id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  </div>
+
+  <div class="col-lg-3 col-md-2">
+    <p id="sushi">Sushi</p><div id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpaconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua qui officia deserunt mollit anim id est laborum.</div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
